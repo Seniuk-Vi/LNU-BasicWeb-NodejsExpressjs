@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 75px;
+}
+
+input[type="text"],
+textarea {
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 100%;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 100%;
+    margin-top: 10px;
+    padding: 5px 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.post-item {
+    background-color: #f1f1f1;
+    border-bottom: 1px dashed #333;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.post-item h3 {
+    margin-bottom: 5px;
+}
+
+.post-item .description {
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.post-item .author {
+    font-weight: bold;
+}
+
+.post-item .actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-item .actions button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 100%;
+    padding: 0;
+    text-decoration: underline;
+    text-transform: lowercase;
+}
+
+.post-item .actions button.edit {
+    color: #0066cc;
+}
+
+.post-item .actions button.delete {
+    color: #cc0000;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    height: 100%;
+    left: 0;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    border: 1px solid #888;
+    margin: 15% auto;
+    padding: 20px;
+    position: relative;
+    width: 80%;
+}
+
+.modal-close {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 100%;
+    margin-left: 10px;
+    padding: 5px 10px;
+}
+
+.modal-close:hover {
+    background-color: #da190b;
+}
